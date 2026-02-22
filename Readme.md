@@ -4,7 +4,7 @@
 
 By designers, for developers. 
 
-![Cover Image](/Tests/ColorTokensKitTests/Exports/cover-image.png)
+![Cover Image](/Docs/Assets/cover-image.png)
 
 # Features
 
@@ -39,12 +39,12 @@ Text("The Everything Company")
 # 🤔 But wait, what are design tokens?
 Design tokens are the fundamental building blocks of a design system. They represent the smallest, atomic decisions in your UI, such as colors, typography, spacing, and more. In the context of ColorTokensKit, we focus just on colors. 
 
-![Color Grid](/Tests/ColorTokensKitTests/Exports/color-grid.png)
+![Color Grid](/Docs/Assets/color-grid.png)
 
 # 🌈 What's LCH though? 
 The LCH (**L**ightness, **C**hroma, **H**ue) color system offers significant advantages over RGB and HSL based initializers. LCH is "perceptually uniform", meaning changes in color values correspond more closely to how humans perceive color differences. This makes it easier to create harmonious color palettes, ensure proper contrast for accessibility, and make predictable color adjustments. Unlike RGB or HSL, LCH also supports a wider gamut of colors and provides more intuitive control over color properties, making it an excellent choice for modern iOS app development.
 
-![Color System Comparison](/Tests/ColorTokensKitTests/Exports/color-system-comparison.png)
+![Color System Comparison](/Docs/Assets/color-system-comparison.png)
 
 # ✨ Can you give me a quick example?
 Imagine you have a primary color used for your brand. This color is used in various levels of brightness and saturation in various areas (backgrounds, text, hovers, buttons, onpress states etc). 
@@ -111,14 +111,14 @@ struct CardView: View {
 
 The `PillView` demonstrates the benefits of using ColorTokensKit's color tokens. You can use the pre-defined color tokens below (like `Color.backgroundPrimary`, `Color.foregroundTertiary`, `Color.outlinePrimary`), or use the custom tokens you created in Step 2.
 
-![Pill View](/Tests/ColorTokensKitTests/Exports/pill-view.png)
+![Pill View](/Docs/Assets/pill-view.png)
 
 ## Themes & Dark mode ([Example Code](/Tests/ColorTokensKitTests/Marketing/Views/ThemedCardView.swift))
 
 Theming is made extremely ergonomic with this approach. You can pass theme values as needed, and all children elements are dynamically assigned colors depending on the LCH color chosen.
 
-![Simple Card View](/Tests/ColorTokensKitTests/Exports/simple-card-view.png)
-![Simple Card Dark Mode View](/Tests/ColorTokensKitTests/Exports/simple-card-dark-mode-view.png)
+![Simple Card View](/Docs/Assets/simple-card-view.png)
+![Simple Card Dark Mode View](/Docs/Assets/simple-card-dark-mode-view.png)
 
 ```swift
 import ColorTokensKit
